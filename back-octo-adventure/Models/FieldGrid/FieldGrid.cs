@@ -7,7 +7,7 @@ namespace back_octo_adventure.Models.FieldMatrix
 {
     public class FieldGrid
     {
-        public String[,] FieldGridArray { get; set; }
+        public String[][] FieldGridArray { get; set; }
 
     }
 }
