@@ -5,5 +5,7 @@
     <RootNamespace>back_octo_adventure</RootNamespace>
   </PropertyGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
 
 </Project>
