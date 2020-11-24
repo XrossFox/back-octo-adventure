@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace back_octo_adventure.Services.GenerateField
 {
+    /// <summary>
+    /// Base class fot the GenerateField service. Implements IGenerateField interface. Here you can find
+    /// the methods to generate field grids at run time from the mapping file references.
+    /// </summary>
     public class GenerateField : IGenerateField
     {
 
@@ -21,6 +25,13 @@ namespace back_octo_adventure.Services.GenerateField
             configurator = config;
         }
 
+        /// <summary>
+        /// Creates a matrix, an array of arrays or jagged array. It represents the field grid for the endpoint according to
+        /// the mapping file map.json.
+        /// </summary>
+        /// <param name="rows"></param>
+        /// <param name="columns"></param>
+        /// <returns></returns>
         public FieldGrid GenerateFieldGrid(int rows, int columns)
         {
             FieldGrid fGrid = new FieldGrid();
