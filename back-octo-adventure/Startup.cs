@@ -28,6 +28,7 @@ namespace back_octo_adventure
         {
             services.AddControllers();
             services.AddScoped<IGenerateField, GenerateField>();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +38,8 @@ namespace back_octo_adventure
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(options => options.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyMethod());
 
             app.UseHttpsRedirection();
 
