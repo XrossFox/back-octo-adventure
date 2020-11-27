@@ -31,11 +31,10 @@ namespace back_octo_adventure.Controllers
         [HttpGet("{rows}/{columns}")]
         public async Task<IActionResult> testCall(int rows, int columns) {
 
-            ResponseWrapper<FieldGrid> Response = new ResponseWrapper<FieldGrid>();
-            FieldGrid fGrid = _genF.GenerateFieldGrid(rows, columns);
+            ResponseWrapper<PlayFieldGrid> Response = new ResponseWrapper<PlayFieldGrid>();
+            PlayFieldGrid fGrid = _genF.GenerateFieldGrid(rows, columns);
             Response.body = fGrid;
             Response.message = "Holis :D";
-
             return Ok(Response);
         }
 

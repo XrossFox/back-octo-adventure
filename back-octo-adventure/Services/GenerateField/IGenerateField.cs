@@ -11,6 +11,6 @@ namespace back_octo_adventure.Services.GenerateField
     /// </summary>
     public interface IGenerateField 
     {
-        public FieldGrid GenerateFieldGrid(int rows, int columns);
+        public PlayFieldGrid GenerateFieldGrid(int rows, int columns);
     }
 }
