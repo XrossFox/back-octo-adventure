@@ -40,7 +40,7 @@ namespace back_octo_adventure.Services.GenerateField
 
             // if bool is false, then terrain will be stone, else will be dirt.
             Random random = new Random();
-            bool floorTilesetType = random.Next(0, 1) == 0? true: false;
+            bool floorTilesetType = random.Next(0, 10) > 5? true: false;
 
             for (int row = 0; row < fGrid.FieldGrid.GetLength(0); row++) {
 
