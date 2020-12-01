@@ -29,7 +29,7 @@ namespace back_octo_adventure.Controllers
         /// <param name="columns"></param>
         /// <returns></returns>
         [HttpGet("{rows}/{columns}")]
-        public async Task<IActionResult> testCall(int rows, int columns) {
+        public async Task<IActionResult> genPlayMatrix(int rows, int columns) {
 
             ResponseWrapper<PlayFieldGrid> Response = new ResponseWrapper<PlayFieldGrid>();
             PlayFieldGrid fGrid = _genF.GenerateFieldGrid(rows, columns);
