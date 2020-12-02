@@ -8,6 +8,6 @@
   },
   "ConnectionStrings": {
     "SQLServerURI": "Server=Server\\Server;Database=myDataBase;User Id=myUsername;Password=myPassword;"
-  }
+  },
   "AllowedHosts": "*"
 }
