@@ -1,0 +1,13 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "ConnectionStrings": {
+    "SQLServerURI": "Server=Server\\Server;Database=myDataBase;User Id=myUsername;Password=myPassword;"
+  }
+  "AllowedHosts": "*"
+}
